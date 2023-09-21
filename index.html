@@ -6,25 +6,32 @@
     <meta name="keywords" content="resume, website">
     <meta name="description" content="Это сайт - резюме">
     <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="180_kot.jpg" width="300" alt="аватар">
-    <h1>Алексей Горохов</h1>
-    <p>Мне 34 года, самое время <strong>войти в IT.</strong> Женат. Уже <em>почти год</em> в роли отца.</p>
-    <h2><strong>Список социальных сетей:</strong></h2>
-    <a href="http://vk.com/id228790247" target="_blank">Вконтакте</a> |
-    <a href="http://t.me/alekseygorockhov08" target="_blank">Telegram</a>
-
-    <h2>Мои хобби:</h2>
+    <div class="container">
+    <div class="info card">
+        <img class="img" src="180_kot.jpg" alt="аватар">
+                 <div class="info-text">
+                <h1>Алексей Горохов</h1>
+                <p>Мне 34 года, самое время <strong>войти в IT.</strong> Женат. Уже <em>почти год</em> в роли отца.</p>
+                <h3><strong>Список социальных сетей:</strong></h3>
+                <a href="http://vk.com/id228790247" target="_blank">Вконтакте</a>
+                <a href="http://t.me/alekseygorockhov08" target="_blank">Telegram</a>
+                </div>
+            </div>
+<div class="card bg-red">
+    <h2>Мои хобби</h2>
     <ul>
         <li>Просмотр кино</li>
         <li>Компьютерные игры</li>
-        <li>Работа с деревом</li>
+         <li>Работа с деревом</li>
     </ul>
-
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
+</div>
+    <div class="card bg-green">
+<h2>Опыт работы</h2>
+    <table class="table">
+        <thead class="thead">
             <tr>
              <th>
               Название
@@ -54,29 +61,27 @@
             <td>2017</td>
             </tr>
         </table>
-           <h2>Связаться со мной</h2> 
-
-           <form action=""></form>
-
-            <div>
-            <label for="name">Ваше имя:</label>
+    </div>
+    <div class="card bg-yellow">
+           <h2 class="h2">Связаться со мной</h2> 
+           <form>
+            <div class=label1>
+            <label for="name">Ваше имя:</label><br>
             <input type="text" id="name" placeholder="Введите имя">
             </div>
-
-            <div>
-            <label for="email">Ваш email:</label>
+            <div class="label2">
+            <label for="email">Ваш email:</label><br>
             <input type="text" id="email" placeholder="Введите email">
             </div>
-
-            <div>
+            <div class=label3>
                 <label for="message">Ваше сообщение:</label>
                 <br>
-                <textarea id="message" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
+                <textarea id="message" cols="46" rows="5" placeholder="Введите сообщение..."></textarea>
             </div>
-
-            <button type="submit">Отправить!</button>
-
+            <button type="submit" class="btn">Отправить!</button>
+        </form>
+        </div>
+        </div>
         </tbody>
-    
 </body>
 </html>
